@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/quaritere.css">
 
   <meta name="theme-color" content="#fafafa">
+
 </head>
 
 <body>
@@ -28,14 +29,14 @@
     <header class="masthead mb-auto">
       <div class="inner">
         <a href="#" class="masthead-brand">
-          <img class="mb-4" src="/img/logo.png" alt="" width="120" height="120">
+          <img class="mb-2" src="/img/logo.png" alt="" width="120" height="120">
         </a>
         <nav class="nav nav-masthead p-4 justify-content-center">
-          <a class="nav-link active" href="#about">Quariterê</a>
-          <a class="nav-link" href="#previous_events">Mostras anteriores</a>
-          <a class="nav-link" href="#regulation">Regulamento</a>
-          <a class="nav-link" href="#subscription">Inscrição</a>
-          <a class="nav-link" href="#afrocine">Afrocine</a>
+          <a class="nav-link btn-navigate" href="#about">Quariterê</a>
+          <a class="nav-link btn-navigate" href="#previous_events">Mostras anteriores</a>
+          <a class="nav-link btn-navigate" href="#regulation">Regulamento</a>
+          <a class="nav-link btn-navigate" href="#subscription">Inscrição</a>
+          <a class="nav-link btn-navigate" href="#afrocine">Afrocine</a>
         </nav>
       </div>
     </header>
@@ -47,20 +48,158 @@
         <a href="#subscription" class="banner-link">
           <img class="mb-4" src="/img/logo_v_mostra_colorido.png" alt="" width="380">
 
+          <div id="about"></div>
+
           <div class="btn-link btn-big">Inscrições abertas</div>
         </a>
       </div>
-      
     </div>
   </section>
 
-  <section class="about-container" id="about"></section>
+  <section class="about-container" >
+    <div class="container main-about-info">
+      <h2 class="info-title">Sobre o Quariterê</h2>
+
+      <div class="bar-title-container">
+        <div class="bar-title bar-title-red"></div>
+        <div class="bar-title bar-title-yellow"></div>
+        <div class="bar-title bar-title-green"></div>
+      </div>
+
+      <p class="info-description">
+        O Coletivo de Audiovisual Negro Quariterê é formado por afrodescendentes que atuam como produtores e entusiastas do audiovisual do Estado de Mato Grosso, com o objetivo de discutir temáticas relacionadas às questões raciais e suas interseccionalidades, que agravam preconceitos de gênero, sexualidade, geracional, estratificação social e econômica. Nesse sentido, o Coletivo de Audiovisual Negro Quariterê realiza, incentiva e apoia ações voltadas para a promoção da equidade de raça e gênero no segmento audiovisual. 
+      </p>
+      <p class="info-description">
+        O Coletivo Quariterê tem a missão de propor, debater, influenciar e monitorar políticas públicas nos âmbitos municipal e estadual que convergem em ações afirmativas para inclusão dos profissionais negros e negras em toda a cadeia produtiva do segmento audiovisual.
+      </p>
+      <p class="info-description">
+        O Quariterê, homenageado no nome do coletivo, foi o Quilombo do Quariterê, localizado na região de Vila Bela, primeira capital do estado. A história do quilombo, é a história de Teresa de Benguela, rainha do Quariterê. Sua resistência heróica e seu espírito democrático foram inspirações para a criação desse lugar de aquilombamento para os profissionais do audiovisual mato-grossense, esse lugar onde podem chegar e se reconhecer entre pares. 
+      </p>
+      <p class="info-description">
+        O encontro de profissionais negros da cultura e do audiovisual que daria origem ao Coletivo Quariterê aconteceu em 19 de setembro de 2017, dias após participarem da Oficina de Cinema Negro ministrada pelo Prof. Dr. Celso Prudente na Universidade Federal de Mato Grosso, entre 11 e 14 de setembro do mesmo ano.
+      </p>
+
+      <hr>
+    </div>
+
+    <div class="navigation-id" id="previous_events"></div>
+  </section>
+
+  <section class="previous-events-container"></section>
+
+  <div class="navigation-id" id="regulation"></div>
+
+  <section class="regulation-container" id="regulation">
+    <div class="container">
+      <div class=" main-regulation-info">
+        <h2 class="info-title">Regulamento</h2>
+  
+        <div class="bar-title-container">
+          <div class="bar-title bar-title-red"></div>
+          <div class="bar-title bar-title-yellow"></div>
+          <div class="bar-title bar-title-green"></div>
+        </div>
+
+        <p class="info-description">
+          A 5ª Mostra de Cinema Negro de MT será realizada no período de 06 a 13 de setembro de
+2020 através da plataforma <a href="http://www.quaritere.com.br">www.quaritere.com.br</a>. Os filmes exibidos serão armazenados em
+links não-listados no YouTube e indexados em nosso site oficial. 
+        </p>
+
+        <button class="btn-link pull-right" data-toggle="modal" data-target="#modal-regulation">
+          Conferir Regulamento
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="navigation-id" id="subscription"></div>
+
+  <section class="subscription-container">
+    <div class="container">
+      <div class="main-regulation-info">
+        <h2 class="info-title">Inscrição</h2>
+  
+        <div class="bar-title-container">
+          <div class="bar-title bar-title-red"></div>
+          <div class="bar-title bar-title-yellow"></div>
+          <div class="bar-title bar-title-green"></div>
+        </div>
+
+        <p class="info-description">
+          A 5ª Mostra de Cinema Negro de MT é uma realização do Coletivo Audiovisual Negro Quariterê
+        </p>
+
+        <p class="info-description">
+          O PERÍODO DE INSCRIÇÃO vai de 30 de junho até 30 de julho de 2020 
+        </p>
+
+        <button class="btn-link" data-toggle="modal" data-target="#modal-subscription">
+          Fazer inscrição Regulamento
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="navigation-id" id="afrocine"></div>
+
+  <section class="afrocine-container" id="afrocine"></section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-regulation" tabindex="-1" role="dialog" aria-labelledby="modal-regulationLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-regulationLabel">Regulamento</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe id="regulation_file"title="PDF in an i-Frame" src="/files/regulamento_5_mostra_de_cinema_negro_de_mato_grosso.pdf" frameborder="1" scrolling="auto" height="500" width="100%" ></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-mute" data-dismiss="modal">Fechar</button>
+          <a href="https://drive.google.com/file/d/1zccGSIj0ldr_GR-SJ0elSiZcVlhrEMeg/view" target="_BLANK" type="button" class="btn btn-link">Abrir Arquivo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscription -->
+  <div class="modal fade" id="modal-subscription" tabindex="-1" role="dialog" aria-labelledby="modal-subscriptionLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-subscriptionLabel">Inscrição</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe id="subscription_file" title="PDF in an i-Frame" src="https://docs.google.com/forms/d/e/1FAIpQLSdA3-weNXj6ALSfOFoIbf_-48OvfBTJXgJdigGOgN6bgkrMNA/viewform" frameborder="1" scrolling="auto" height="500" width="100%" ></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-mute" data-dismiss="modal">Fechar</button>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdA3-weNXj6ALSfOFoIbf_-48OvfBTJXgJdigGOgN6bgkrMNA/viewform" target="_BLANK" type="button" class="btn btn-link">Abrir Formulário</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+  <script type='text/javascript'>
+    $(document).on('load', function(){
+      alert('HEY');
+    });
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

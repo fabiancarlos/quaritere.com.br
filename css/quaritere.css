@@ -2,20 +2,58 @@
 html,
 body {
   height: 100%;
-  background-color: #1D1D1D;
+}
+
+section {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+      max-width: 840px;
+  }
+}
+
+.navigation-id {
+  width: 100%;
+  height: 20px;
+  margin: 40px 0px;
 }
 
 /*
  * Btns
  */
 
+.btn-mute {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 0px;
+  border: none;
+  background-color: #333333;
+}
+
+.btn-mute:hover,
+.btn-mute:focus {
+  color: #aaaaaa;
+  border: none;
+  text-decoration: underline;
+}
+
 .btn-link {
   display: inline-block;
   font-size: 16px;
   font-weight: 800;
   color: #111111;
-  padding: 20px 35px;
+  padding: 15px 25px;
   border-radius: 0px;
+  border: none;
   background-color: #EEB742;
 }
 
@@ -23,11 +61,13 @@ body {
   font-size: 24px;
   font-weight: 800;
   margin: 10px 0px;
+  padding: 20px 35px;
 }
 
 .btn-link:hover, 
 .btn-link:focus {
   color: #444444;
+  border: none;
 }
 
 /*
@@ -38,8 +78,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
-  background-color: rgba(25, 25, 25, .25);
+  z-index: 1049;
+  background-color: rgba(25, 25, 25, .45);
 }
 
 .masthead {
@@ -53,8 +93,9 @@ body {
 
 .nav-masthead .nav-link {
   padding: .35rem 0;
-  font-weight: 400;
+  font-weight: 800;
   color: #EEB742;
+  text-shadow: 0 .05rem .1rem rgba(30, 30, 30, .5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
@@ -98,9 +139,9 @@ body {
 
 .main-banner-container {
   width: 100%;
-  height: 400px;
+  height: 500px;
   position: absolute;
-  bottom: 120px;
+  bottom: 30px;
   left: 0;
   right: 0;
   text-align: center;
@@ -122,5 +163,114 @@ body {
 
 .about-container {
   min-height: 400px;
+  margin-top: 0px;
   background-color: #ffffff;
 }
+
+.main-about-info {
+  min-height: 300px;
+  position: relative;
+  top: -80px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 10px 16px rgba(40, 40, 40, .25);
+}
+
+.info-title {
+  font-size: 35px;
+  font-weight: 400;
+  color: #1D1D1D;
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.info-description {
+  font-size: 16px;
+  font-weight: 600;
+  text-indent: 30px;
+  margin: 0px 20px;
+}
+
+.bar-title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.bar-title {
+  flex: 0.3;
+  height: 8px;
+  border-radius: 18px;
+  margin: 20px 0px 40px;
+}
+
+.bar-title-red {
+  background-color: #B53A41;
+}
+
+.bar-title-yellow {
+  background-color: #EDB742;
+}
+
+.bar-title-green {
+  background-color: #6F842E;
+}
+
+/*
+ * Previous events
+ */
+
+.previous-events-container{
+  width: 100%;
+  min-height: 300px;
+  background-color: #1D1D1D;
+}
+
+/*
+ * Regulation
+ */
+
+.regulation-container{
+  min-height: 200px;
+  margin-top: 0px;
+  background-color: #ffffff;
+  margin-bottom: 100px;
+}
+
+.main-regulation-info {
+  min-height: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 10px 16px rgba(40, 40, 40, .25);
+}
+
+/*
+ * Subscription
+ */
+
+.subscription-container{
+  min-height: 200px;
+  margin-top: 0px;
+  background-color: #ffffff;
+}
+
+.main-subscription-info {
+  min-height: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 10px 16px rgba(40, 40, 40, .25);
+}
+
+/*
+ * Sfrocine
+ */
+
+.afrocine-container{
+  width: 100%;
+  min-height: 300px;
+  background-color: #1D1D1D;
+}
+
