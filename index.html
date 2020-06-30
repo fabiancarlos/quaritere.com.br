@@ -45,10 +45,8 @@
   <section class="main-banner-background">
     <div class="main-banner-container">
       <div class="main-banner">
-        <a href="#subscription" class="banner-link">
-          <img class="mb-4" src="/img/logo_v_mostra_colorido.png" alt="" width="380">
-
-          <div id="about"></div>
+        <a href="#subscription" class="banner-link btn-navigate">
+          <img class="mb-4" src="/img/logo_v_mostra_colorido.png" alt="" width="330">
 
           <div class="btn-link btn-big">Inscrições abertas</div>
         </a>
@@ -56,7 +54,9 @@
     </div>
   </section>
 
-  <section class="about-container" >
+  <div id="about"></div>
+
+  <section class="about-container">
     <div class="container main-about-info">
       <h2 class="info-title">Sobre o Quariterê</h2>
 
@@ -81,13 +81,9 @@
 
       <hr>
     </div>
-
-    <div class="navigation-id" id="previous_events"></div>
   </section>
 
-  <section class="previous-events-container"></section>
-
-  <div class="navigation-id" id="regulation"></div>
+  <section class="previous-events-container" id="previous_events"></section>
 
   <section class="regulation-container" id="regulation">
     <div class="container">
@@ -106,16 +102,16 @@
 links não-listados no YouTube e indexados em nosso site oficial. 
         </p>
 
-        <button class="btn-link pull-right" data-toggle="modal" data-target="#modal-regulation">
-          Conferir Regulamento
-        </button>
+        <div class="action-contianer">
+          <button class="btn-link pull-right" data-toggle="modal" data-target="#modal-regulation">
+            Conferir Regulamento
+          </button>
+        </div>
       </div>
     </div>
   </section>
 
-  <div class="navigation-id" id="subscription"></div>
-
-  <section class="subscription-container">
+  <section class="subscription-container" id="subscription">
     <div class="container">
       <div class="main-regulation-info">
         <h2 class="info-title">Inscrição</h2>
@@ -134,16 +130,31 @@ links não-listados no YouTube e indexados em nosso site oficial.
           O PERÍODO DE INSCRIÇÃO vai de 30 de junho até 30 de julho de 2020 
         </p>
 
-        <button class="btn-link" data-toggle="modal" data-target="#modal-subscription">
-          Fazer inscrição Regulamento
-        </button>
+        <div class="action-contianer">
+          <button class="btn-link" data-toggle="modal" data-target="#modal-subscription">
+            Fazer inscrição
+          </button>
+        </div>
       </div>
     </div>
   </section>
 
-  <div class="navigation-id" id="afrocine"></div>
-
   <section class="afrocine-container" id="afrocine"></section>
+
+  <footer class="footer-container" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <a href="mailto:coletivoaudiovisualnegro@gmail.com" class="footer-contact">
+            coletivoaudiovisualnegro@gmail.com
+          </a>
+        </div>
+        <div class="col-sm-7">
+          <p class="footer-copyright">&copy; 2020 Coletivo Negro Audiovisual Quariterê - MT &middot; Afrocine </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Modal -->
   <div class="modal fade" id="modal-regulation" tabindex="-1" role="dialog" aria-labelledby="modal-regulationLabel" aria-hidden="true">
@@ -156,7 +167,7 @@ links não-listados no YouTube e indexados em nosso site oficial.
           </button>
         </div>
         <div class="modal-body">
-          <iframe id="regulation_file"title="PDF in an i-Frame" src="/files/regulamento_5_mostra_de_cinema_negro_de_mato_grosso.pdf" frameborder="1" scrolling="auto" height="500" width="100%" ></iframe>
+          <iframe id="regulation_file"title="PDF in an i-Frame" src="/files/regulamento_5_mostra_de_cinema_negro_de_mato_grosso.pdf" frameborder="1" scrolling="auto" height="400" width="100%" ></iframe>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-mute" data-dismiss="modal">Fechar</button>
@@ -177,7 +188,7 @@ links não-listados no YouTube e indexados em nosso site oficial.
           </button>
         </div>
         <div class="modal-body">
-          <iframe id="subscription_file" title="PDF in an i-Frame" src="https://docs.google.com/forms/d/e/1FAIpQLSdA3-weNXj6ALSfOFoIbf_-48OvfBTJXgJdigGOgN6bgkrMNA/viewform" frameborder="1" scrolling="auto" height="500" width="100%" ></iframe>
+          <iframe id="subscription_file" title="PDF in an i-Frame" src="https://docs.google.com/forms/d/e/1FAIpQLSdA3-weNXj6ALSfOFoIbf_-48OvfBTJXgJdigGOgN6bgkrMNA/viewform" frameborder="1" scrolling="auto" height="400" width="100%" ></iframe>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-mute" data-dismiss="modal">Fechar</button>
@@ -194,12 +205,6 @@ links não-listados no YouTube e indexados em nosso site oficial.
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
-  <script type='text/javascript'>
-    $(document).on('load', function(){
-      alert('HEY');
-    });
-  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

@@ -14,14 +14,8 @@ section {
   .container-md,
   .container-sm,
   .container-xl {
-      max-width: 840px;
+    max-width: 800px;
   }
-}
-
-.navigation-id {
-  width: 100%;
-  height: 20px;
-  margin: 40px 0px;
 }
 
 /*
@@ -33,8 +27,9 @@ section {
   font-size: 16px;
   font-weight: 800;
   color: #ffffff;
-  padding: 15px 25px;
-  border-radius: 0px;
+  padding: 10px 20px;
+  -webkit-appearance: none;
+  border-radius: 0;
   border: none;
   background-color: #333333;
 }
@@ -48,20 +43,21 @@ section {
 
 .btn-link {
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
   color: #111111;
-  padding: 15px 25px;
-  border-radius: 0px;
+  padding: 10px 20px;
+  -webkit-appearance: none;
+  border-radius: 0;
   border: none;
   background-color: #EEB742;
 }
 
 .btn-link.btn-big {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
   margin: 10px 0px;
-  padding: 20px 35px;
+  padding: 15px 30px;
 }
 
 .btn-link:hover, 
@@ -79,7 +75,7 @@ section {
   top: 0;
   left: 0;
   z-index: 1049;
-  background-color: rgba(25, 25, 25, .45);
+  background-color: rgba(25, 25, 25, .65);
 }
 
 .masthead {
@@ -120,6 +116,7 @@ section {
   }
   .nav-masthead {
     float: right;
+    padding-bottom: 0px !important;
   }
 }
 
@@ -192,6 +189,11 @@ section {
   margin: 0px 20px;
 }
 
+.action-contianer {
+  padding: 25px;
+  text-align: center;
+}
+
 .bar-title-container {
   display: flex;
   flex-direction: row;
@@ -233,9 +235,8 @@ section {
 
 .regulation-container{
   min-height: 200px;
-  margin-top: 0px;
   background-color: #ffffff;
-  margin-bottom: 100px;
+  margin: 50px 0px;
 }
 
 .main-regulation-info {
@@ -252,8 +253,8 @@ section {
 
 .subscription-container{
   min-height: 200px;
-  margin-top: 0px;
   background-color: #ffffff;
+  margin: 50px 0px;
 }
 
 .main-subscription-info {
@@ -265,7 +266,7 @@ section {
 }
 
 /*
- * Sfrocine
+ * Afrocine
  */
 
 .afrocine-container{
@@ -274,3 +275,39 @@ section {
   background-color: #1D1D1D;
 }
 
+
+/*
+ * Footer
+ */
+
+.footer-container{
+  padding: 20px 0px;
+  background-color: #EEB742;
+}
+
+.footer-copyright {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1D1D1D;
+  text-align: center;
+}
+
+.footer-contact {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1D1D1D;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+@media (min-width: 48em) {
+  .footer-contact {
+    padding: 0px;
+  }
+}
+
+.footer-contact:hover,
+.footer-contact:focus {
+  color: #333333;
+}
