@@ -263,6 +263,7 @@ section {
 
 .info-group-photo-container {
   display: none;
+  height: 300px;
   margin: 0px 30px;
   border-radius: 18px;
   box-shadow: 0px 6px 12px rgba(40, 40, 40, .25);
@@ -278,7 +279,6 @@ section {
 
 .info-group-details {
   flex: 1;
-  height: 300px;
   margin: 0px;
 }
 
@@ -288,7 +288,7 @@ section {
 }
 
 .info-group-title-reverse {
-  text-align: right;
+  text-align: left;
 }
 
 .info-group-description {
@@ -306,6 +306,9 @@ section {
   .info-group-photo-container {
     flex: 0.25;
     display: flex;
+  }
+  .info-group-title-reverse {
+    text-align: right;
   }
 }
 
@@ -379,7 +382,7 @@ section {
 }
 
 .main-special_guest-info {
-  min-height: 300px;
+  min-height: 400px;
   padding: 20px;
   background-color: #fff;
   border-radius: 16px;
