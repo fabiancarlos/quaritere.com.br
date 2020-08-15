@@ -18,10 +18,12 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/quaritere.css">
 
   <meta name="theme-color" content="#fafafa">
 
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
 
 <body>
@@ -33,9 +35,11 @@
         </a>
         <nav class="nav nav-masthead p-4 justify-content-center">
           <a class="nav-link btn-navigate" href="#about">Quariterê</a>
-          <a class="nav-link btn-navigate" href="#previous_events">Mostras anteriores</a>
+          <!-- <a class="nav-link btn-navigate" href="#previous_events">Mostras anteriores</a> -->
           <a class="nav-link btn-navigate" href="#regulation">Regulamento</a>
-          <a class="nav-link btn-navigate" href="#subscription">Inscrição</a>
+          <a class="nav-link btn-navigate" href="#jury">Juri</a>
+          <a class="nav-link btn-navigate" href="#special_guest">Convidado especial</a>
+          <!-- <a class="nav-link btn-navigate" href="#subscription">Inscrição</a> -->
           <a class="nav-link btn-navigate" href="#afrocine">Afrocine</a>
         </nav>
       </div>
@@ -44,13 +48,46 @@
 
   <section class="main-banner-background">
     <div class="main-banner-container">
-      <div class="main-banner">
-        <a href="#subscription" class="banner-link btn-navigate">
-          <img class="mb-4" src="/img/logo_v_mostra_colorido.png" alt="" width="330">
-
-          <div class="btn-link btn-big">Inscrições abertas</div>
+       <div class="main-banner">
+        <a href="#jury" class="banner-link btn-navigate">
         </a>
       </div>
+    </div>
+  </section>
+
+  <section class="video-container">
+    <div class="container main-video-info">
+      <h2 class="info-title">V Mostra de cinema negro</h2>
+
+      <div class="bar-title-container">
+        <div class="bar-title bar-title-red"></div>
+        <div class="bar-title bar-title-yellow"></div>
+        <div class="bar-title bar-title-green"></div>
+      </div>
+
+      <div class="video-container">
+        <video
+          id="my-video"
+          class="video-js"
+          controls
+          preload="auto"
+          width="800"
+          height="440"
+          poster="/img/post.png"
+          data-setup="{}"
+        >
+          <source src="/video/v_mostra.mp4" type="video/mp4" />
+          <source src="/video/v_mostra.webm" type="video/webm" />
+          <p class="vjs-no-js">
+            Para ver esse vídeo, ative o javascript do ser browser, ou considere
+            atualizar seu browser para
+            <a href="https://videojs.com/html5-video-support/" target="_blank"
+              >suportar vídeos HTML5</a
+            >
+          </p>
+        </video>
+      </div>
+      
     </div>
   </section>
 
@@ -83,7 +120,7 @@
     </div>
   </section>
 
-  <section class="previous-events-container" id="previous_events"></section>
+  <!-- <section class="previous-events-container" id="previous_events"></section> -->
 
   <section class="regulation-container" id="regulation">
     <div class="container">
@@ -111,7 +148,13 @@ links não-listados no YouTube e indexados em nosso site oficial.
     </div>
   </section>
 
-  <section class="subscription-container" id="subscription">
+  <section class="regulation-container" id="regulation"></section>
+
+  <section class="jury-container" id="jury"></section>
+
+  <section class="special_guest-container" id="special_guest"></section>
+
+  <!-- <section class="subscription-container" id="subscription">
     <div class="container">
       <div class="main-regulation-info">
         <h2 class="info-title">Inscrição</h2>
@@ -137,7 +180,7 @@ links não-listados no YouTube e indexados em nosso site oficial.
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="afrocine-container" id="afrocine"></section>
 
@@ -204,6 +247,7 @@ links não-listados no YouTube e indexados em nosso site oficial.
   <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
