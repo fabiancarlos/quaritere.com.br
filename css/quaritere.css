@@ -215,6 +215,14 @@ section {
   margin: 15px 20px;
 }
 
+.info-subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  color: #1D1D1D;
+  text-align: center;
+  margin: 15px 0px;
+}
+
 .info-list {
   list-style: none;
   padding: 10px 20px;
@@ -238,18 +246,17 @@ section {
   margin-bottom: 40px;
 }
 
-
 /*
- * Main Show
+ * Pre show
  */
 
-.show_main-container {
+ .pre_show-container {
   min-height: 400px;
-  margin-bottom: 60px;
+  margin-top: 0px;
   background-color: #1D1D1D;
 }
 
-.main-show_main-info {
+.main-pre_show-info {
   min-height: 300px;
   position: relative;
   top: -80px;
@@ -259,6 +266,74 @@ section {
   box-shadow: 0px 10px 16px rgba(40, 40, 40, .25);
 }
 
+.modal-video-header {
+  background-color:rgba(20, 20, 20, 0.3);
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  border: none;
+}
+
+.modal-video-close {
+  font-size: 36px;
+  color: #111;
+  opacity: 1;
+  text-shadow: 0 1px 0 #6c0e0e;
+}
+
+.modal-video-body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.modal-video-footer {
+  background-color: #000;
+}
+
+.modal-video-footer .btn {
+  background-color: #000;
+}
+
+.videos-group-container h4 {
+  font-size: 1.3rem;
+}
+
+.videos-group-container small {
+
+}
+
+.videos-group-container .video-item {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  border: 1px solid #eee;
+}
+
+/*
+ * Main Show
+ */
+
+.show_main-container {
+  min-height: 400px;
+  margin-bottom: 60px;
+  background-color: #ffffff;
+}
+
+.main-show_main-info {
+  min-height: 300px;
+  position: relative;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 10px 16px rgba(40, 40, 40, .25);
+}
 
 /*
  * About
