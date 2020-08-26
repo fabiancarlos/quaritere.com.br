@@ -24,6 +24,30 @@
   <meta name="theme-color" content="#fafafa">
 
   <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDzU2qRDrrn1f_6D-M2JNZOzy8RAXnQbi0",
+      authDomain: "quaritere-a2d45.firebaseapp.com",
+      databaseURL: "https://quaritere-a2d45.firebaseio.com",
+      projectId: "quaritere-a2d45",
+      storageBucket: "quaritere-a2d45.appspot.com",
+      messagingSenderId: "279887295638",
+      appId: "1:279887295638:web:ea6710ee81b5b49315beb7",
+      measurementId: "G-MNPFM531CG"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 </head>
 
 <body>
